@@ -5,7 +5,7 @@ emp_number = int(input())
 # 社員名を取得してリスト作成
 list_emp_name = input().rstrip().split(' ')
 # 社員数と社員名の件数が一致するかチェック
-if emp_number != list_emp_name.__len__:
+if emp_number != len(list_emp_name):
     print('社員名の件数が入力値【社員数】=' + str(emp_number) + 'と一致しません')
     exit(0)
 # 空のdictを作成※社員名、購入金額
